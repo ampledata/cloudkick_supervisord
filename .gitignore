@@ -1,0 +1,6 @@
+*.pyc
+*.egg
+*.egg-info
+build/*
+dist/*
+supervisord_status.conf
