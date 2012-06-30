@@ -1,0 +1,33 @@
+Cloudkick Agent Plugin for supervisord.
+
+Uses supervisord's XML-RPC interface to query process status and returns the
+status in cloudkick-complaint format.
+
+Also logs the output to syslog!
+
+Usage
+=====
+Command Line::
+  $ supervisord_status --server 184.72.74.230 --port 808 stud
+
+Via Config File::
+  $ cat /etc/supervisord_status.conf
+  [conf]
+  server = 127.0.0.1
+  port = 808
+  $ supervisord_status stud
+
+Author
+======
+Greg Albrecht <gba@splunk.com>
+
+http://twitter.com/ampledata
+https://github.com/ampledata
+
+Copyright
+=========
+Copyright 2012 Splunk, Inc.
+
+License
+=======
+Apache License 2.0
